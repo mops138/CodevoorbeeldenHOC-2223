@@ -50,7 +50,7 @@ public class BinaireFileDemo {
             input = new ObjectInputStream(new FileInputStream(bestandsnaam));
             int getal = input.readInt();
 
-            while (true) {
+            while (getal > 0) {
                 System.out.println(getal);
                 getal = input.readInt();
             }
